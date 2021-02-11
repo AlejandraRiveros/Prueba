@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CalculoIntereses</string>
+    <string name="tvTitulo">Calculos de interes</string>
+    <string name="etCantDinero">Cantidad de dinero</string>
+    <string name="etTasa">Tasa de Interes</string>
+    <string name="tvDias">Dias:</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="btnLimpiar">Limpiar</string>
+    <string name="btnMostrar">Mostrar</string>
+    <string name="tvResultado"></string>
+</resources>

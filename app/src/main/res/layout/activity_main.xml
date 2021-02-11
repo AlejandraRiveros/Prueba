@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="3mm">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5mm"
+        android:text="@string/tvTitulo"
+        android:textSize="22dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etCantDinero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/etCantDinero"
+        android:inputType="number"
+        android:padding="5mm" />
+
+    <EditText
+        android:id="@+id/etTasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3mm"
+        android:hint="@string/etTasa"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvDias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="5mm"
+        android:text="@string/tvDias" />
+
+    <SeekBar
+        android:id="@+id/sbDias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:padding="5mm"
+        android:progress="0" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3mm">
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="calculo"
+            android:text="@string/btnCalcular" />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="limpiar"
+            android:text="@string/btnLimpiar" />
+
+        <Button
+            android:id="@+id/btnMostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="mandarResultado"
+            android:text="@string/btnMostrar" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5mm"
+        android:text="@string/tvResultado" />
+
+</LinearLayout>
